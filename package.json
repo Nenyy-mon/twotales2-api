@@ -1,7 +1,7 @@
 {
   "name": "2tales-shop",
   "version": "1.0.0",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://twotales2-api.onrender.com",
   "description": "backend for 2tales shop site",
   "main": "app.js",
   "scripts": {

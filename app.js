@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser')
+const bodyParser = require('body-parser');
+
 app.set("trust proxy", true);
 
 app.use(cors({
@@ -47,7 +49,6 @@ const productsRouter = require('./routers/products.js');
 const privateUserRouter = require('./routers/privateUser.js');
 const companyUserRouter = require('./routers/companyUser.js');
 const profileRouter = require('./routers/privateUserProfile.js');
-const bodyParser = require('body-parser');
 const privateUser = require('./models/privateUser.js');
 const cartRouter = require('./routers/cart.js')
 //routes
@@ -67,6 +68,6 @@ app.use(bodyParser.urlencoded({
 
 
 app.listen(1534, () => {
-    console.log('server running now on http://localhost:1534')
+    console.log('server running now on https://twotales2-api.onrender.com')
 
 });
